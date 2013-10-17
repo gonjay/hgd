@@ -31,18 +31,13 @@
                   <a href="officialnews" class="titleHref news">官方新闻</a>
                 </div>
                 <div class="infoCont">
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">离退休处深入访谈慰问老党员干部群众</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">商贸学院召开“七一”表彰暨期末总结大会</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">离退休处深入访谈慰问老党员干部群众</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">商贸学院召开“七一”表彰暨期末总结大会</a>
-                  </div>
+                  <% @officialnews.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14] %></a>
+                    </div>
+
+                  <% end %>
                 </div>
               </div>
               <div class="modelPic fR">
@@ -59,15 +54,13 @@
                   <a href="schoolbully" class="titleHref study">学霸专区</a>
                 </div>
                 <div class="infoCont">
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">四六级考题技巧分析</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">历届考研真题收集整理</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">学霸采访手记：从学渣到学霸的蜕变</a>
-                  </div>
+                  <% @schoolbully.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
                 </div>
               </div>
               <div class="modelPic fR">
@@ -85,15 +78,13 @@
                   <a href="growthbook" class="titleHref growUp">成长手册</a>
                 </div>
                 <div class="infoCont">
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">大一新生入校园</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">历届考研真题收集整理</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">学霸采访手记：从学渣到学霸的蜕变</a>
-                  </div>
+                  <% @growthbook.each do |news| %>
+
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
                 </div>
               </div>
               <div class="modelPic fR">
@@ -110,15 +101,12 @@
                   <a href="hersay" class="titleHref message">小道消息</a>
                 </div>
                 <div class="infoCont">
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">·暗恋：青春期的那件小事</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">学姐血的教训，不管大几都应该看看</a>
-                  </div>
-                  <div class="newsItem">
-                    <a href="#" class="newsHref">告白被拒求安慰</a>
-                  </div>
+                  <% @hearsay.each do |news| %>
+                    <div class="newsItem">
+                    <a href="<%= passage_path(news) %>" class="newsHref"><%= news.title[0,14]  %></a>
+                    </div>
+
+                  <% end %>
                 </div>
               </div>
               <div class="modelPic fR">

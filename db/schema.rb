@@ -14,8 +14,12 @@
 ActiveRecord::Schema.define(version: 20130923170032) do
 
   create_table "passages", force: true do |t|
-    t.string   "name"
-    t.string   "content"
+    t.string   "title"
+    t.text     "content"
+    t.text     "images"
+    t.string   "postUrl"
+    t.string   "newsrecord"
+    t.integer  "psgType"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

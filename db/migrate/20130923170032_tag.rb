@@ -8,8 +8,12 @@ class Tag < ActiveRecord::Migration
     end
 
     create_table :passages do |t|
-      t.string :name
-      t.string :content
+      t.string  :title
+      t.text    :content
+      t.text    :images
+      t.string  :postUrl
+      t.string  :newsrecord
+      t.integer :psgType
 
       t.timestamps
     end

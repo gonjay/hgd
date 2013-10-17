@@ -6,7 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/default.css"/>
 	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/header.css"/>
 	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/styles/common/footer.css"/>
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,7 +14,7 @@
 
 	<%= yield %>
 
-	<%= render 'layouts/footer' %>
+	<%= render 'layouts/passage_footer' %>
 
 </body>
 </html>

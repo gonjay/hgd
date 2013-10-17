@@ -174,3 +174,12 @@
     });
   });
 </script>
+
+
+
+<script type="text/javascript">
+  $('#mypassageContent img').each(function() {
+    var src = $(this).attr('src');
+    $(this).attr('src', '<%= @passage.images %>' + src);
+  });
+</script>
