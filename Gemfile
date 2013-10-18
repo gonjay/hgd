@@ -29,6 +29,7 @@ gem 'turbolinks'
 gem 'simple_form'
 group :production do
   gem 'mysql2'
+  gem 'activerecord-mysql-adapter'
 end
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
