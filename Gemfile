@@ -46,8 +46,7 @@ end
 gem 'unicorn'
 gem 'rainbows'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
+gem 'rails_admin'
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+
+gem "devise"
