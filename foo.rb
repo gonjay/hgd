@@ -40,7 +40,7 @@ for i in 1..1
 
     # puts content
 
-    response = RestClient.post "http://0.0.0.0:3000/passages.json",
+    response = RestClient.post "http://192.241.236.55:3000/passages.json",
     {
       passage: 
       {
