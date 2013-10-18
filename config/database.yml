@@ -19,9 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
-  database: rails
-  user: rails
-  password: U7cpcJFfEB
-  pool: 5
-  timeout: 5000
+  adapter: mysql2
+  encoding: utf8
+  database: hgd_production
+  user: root
+  password:
+  host: localhost
