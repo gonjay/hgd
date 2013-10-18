@@ -2,13 +2,16 @@
 <html>
 <head>
 	<title>Hgd</title>
-	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<link rel="stylesheet" type="text/css" href="<%= root_path %>assets/lib/bootstrap/css/bootstrap.min.css" />
 	<%= csrf_meta_tags %>
 </head>
 <body>
 
+	<div class="container">
+
 	<%= yield %>
+
+	</div>
 
 </body>
 </html>

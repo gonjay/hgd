@@ -50,3 +50,4 @@ gem 'rails_admin'
 
 
 gem "devise"
+gem "devise-i18n"
