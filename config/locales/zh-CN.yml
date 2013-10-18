@@ -4,9 +4,55 @@ zh-CN:
       name: '主页'
     actions:
       dashboard:
-        menu: '面板'
+        menu: '控制面板'
+        breadcrumb: '控制面板'
+      index:
+        breadcrumb: '列表'
+        menu: '列表'
+        title: '列表'
+      show:
+        breadcrumb: '创建'
+        menu: '详细'
+        title: '详细'
+      edit:
+        breadcrumb: '编辑'
+        menu: '编辑'
+        title: '编辑'
+      delete:
+        breadcrumb: '删除'
+        menu: '删除'
+        title: '删除'
+      new:
+        breadcrumb: '创建'
+        menu: '增加新文章'
+        title: '创建新的'
+      export:
+        bulk_link: '导出选中'
+        breadcrumb: '导出'
+        menu: '导出'
+        link: '导出当前数据'
+        export: '导出'
+      history_index:
+        title: '历史记录'
+        breadcrumb: '历史记录'
+        menu: '历史记录'
+      history_show:
+        breadcrumb: '历史'
+        menu: '历史'
+        title: '历史'
+      bulk_delete:
+        bulk_link: '删除选中'
+      show_in_app:
+        menu: '预览'
     index:
-      title: ''
+      title: '列表'
+    form:
+      optional: '可选'
+      required: '必填'
+      char_length_up_to: '最长'
+      char_length_of: '长度范围'
+    misc:
+      filter: '筛选'
 
   devise:
     failure:
