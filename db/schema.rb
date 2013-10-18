@@ -55,11 +55,4 @@ ActiveRecord::Schema.define(version: 20131018013352) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories"
 
-  create_table "tags", force: true do |t|
-    t.string   "name"
-    t.string   "content"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end
