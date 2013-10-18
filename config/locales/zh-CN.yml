@@ -1,151 +1,148 @@
 zh-CN:
   admin:
+    js:
+      true: 正确
+      false: 错误
+      is_present: 显示
+      is_blank: 为空
+      date: Date ...
+      between_and_: Between ... and ...
+      today: Today
+      yesterday: Yesterday
+      this_week: This week
+      last_week: Last week
+      number: Number ...
+      contains: Contains
+      is_exactly: Is exactly
+      starts_with: Starts with
+      ends_with: Ends with
+    loading: "Loading..."
     home:
-      name: '主页'
+      name: "主页"
+    pagination:
+      previous: "&laquo; 前一页"
+      next: "下一页 &raquo;"
+      truncate: "…"
+    misc:
+      filter_date_format: "mm/dd/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
+      search: "搜索"
+      filter: "筛选"
+      refresh: "刷新"
+      show_all: "显示所有"
+      add_filter: "添加筛选项"
+      bulk_menu_title: "选中条目"
+      remove: "删除"
+      add_new: "增加新的"
+      chosen: "选择 %{name}"
+      chose_all: "选择全部"
+      clear_all: "清除全部"
+      up: "向上"
+      down: "向下"
+      navigation: "导航"
+      navigation_static_label: "链接"
+      log_out: "退出"
+      ago: "之前"
+    flash:
+      successful: "%{name} 成功的 %{action}"
+      error: "%{name} 失败了 %{action} 操作"
+      noaction: "没有被选中的操作"
+      model_not_found: "模型 '%{model}' 没能被找到"
+      object_not_found: "%{model} 的id为 '%{id}' 不能被找到"
+    table_headers:
+      model_name: "模型"
+      last_used: "最后被使用"
+      records: "记录"
+      username: "用户"
+      changes: "改变"
+      created_at: "日期/时间"
+      item: "条目"
+      message: "消息"
     actions:
       dashboard:
-        menu: '控制面板'
-        breadcrumb: '控制面板'
+        title: "管理员站点"
+        menu: "控制面板"
+        breadcrumb: "控制面板"
       index:
-        breadcrumb: '列表'
-        menu: '列表'
-        title: '列表'
+        title: "%{model_label_plural} 列表"
+        menu: "列表"
+        breadcrumb: "%{model_label_plural}"
       show:
-        breadcrumb: '创建'
-        menu: '详细'
-        title: '详细'
-      edit:
-        breadcrumb: '编辑'
-        menu: '编辑'
-        title: '编辑'
-      delete:
-        breadcrumb: '删除'
-        menu: '删除'
-        title: '删除'
-      new:
-        breadcrumb: '创建'
-        menu: '增加新文章'
-        title: '创建新的'
-      export:
-        bulk_link: '导出选中'
-        breadcrumb: '导出'
-        menu: '导出'
-        link: '导出当前数据'
-        export: '导出'
-      history_index:
-        title: '历史记录'
-        breadcrumb: '历史记录'
-        menu: '历史记录'
-      history_show:
-        breadcrumb: '历史'
-        menu: '历史'
-        title: '历史'
-      bulk_delete:
-        bulk_link: '删除选中'
+        title: "%{model_label} '%{object_label}' 详细"
+        menu: "详细"
+        breadcrumb: "%{object_label}"
       show_in_app:
-        menu: '预览'
-    index:
-      title: '列表'
+        menu: "预览"
+      new:
+        title: "创建 %{model_label}"
+        menu: "创建"
+        breadcrumb: "New"
+        link: "创建一个 %{model_label}"
+        done: "已经创建"
+      edit:
+        title: "编辑 %{model_label} '%{object_label}'"
+        menu: "编辑"
+        breadcrumb: "编辑"
+        link: "编辑 %{model_label}"
+        done: "已更新"
+      delete:
+        title: "删除 %{model_label} '%{object_label}'"
+        menu: "删除"
+        breadcrumb: "删除"
+        link: "删除 '%{object_label}'"
+        done: "删除"
+      bulk_delete:
+        title: "删除 %{model_label_plural}"
+        menu: "多个删除"
+        breadcrumb: "多个删除"
+        bulk_link: "删除选中的 %{model_label_plural}"
+      export:
+        title: "导出 %{model_label_plural}"
+        menu: "导出"
+        breadcrumb: "导出"
+        link: "导出 %{model_label_plural}"
+        bulk_link: "导出选中的 %{model_label_plural}"
+        done: "已导出"
+      history_index:
+        title: "%{model_label_plural} 的历史记录"
+        menu: "历史记录"
+        breadcrumb: "历史记录"
+      history_show:
+        title: "%{model_label} '%{object_label}' 的历史记录"
+        menu: "历史记录"
+        breadcrumb: "历史记录"
     form:
-      optional: '可选'
-      required: '必填'
-      char_length_up_to: '最长'
-      char_length_of: '长度范围'
-    misc:
-      filter: '筛选'
-
-  devise:
-    failure:
-      already_authenticated: '您已经登录.'
-      unauthenticated: '继续操作前请注册或者登录.'
-      unconfirmed: '继续操作前请先激活您的帐号.'
-      locked: '您的帐号已被锁定.'
-      invalid: '邮箱或密码错误'
-      invalid_token: '认证码无效.'
-      timeout: '您已登录超时，请重新登录.'
-      inactive: '您还没有激活帐户.'
-    sessions:
-      signed_in: '登录成功.'
-      signed_out: '退出成功.'
-    passwords:
-      send_instructions: '稍后你将收到帐号激活的电子邮件'
-      updated: '您的密码已修改成功，您现在已登录.'
-      updated_not_active: '您的密码已修改成功.'
-      send_paranoid_instructions: '如果您的邮箱存在于我们的数据库中，您将收到一封找回密码的邮件.'
-    confirmations:
-      send_instructions: '稍后你将收到帐号激活的电子邮件'
-      confirmed: '您的帐号已经激活，您现在已登录.'
-      send_paranoid_instructions: '如果您的邮箱存在于我们的数据库中，您将收到一封激活账号的邮件.'
-    registrations:
-      signed_up: '欢迎您！您已注册成功.'
-      updated: '帐号资料更新成功.'
-      update_needs_confirmation: '您更改了邮箱地址，我们需要验证您的新邮箱地址，请查看您的邮箱，点击激活链接来验证您的新邮箱地址.'
-      destroyed: '再见！您的帐户已成功注销。我们希望很快可以再见到您.'
-      signed_up_but_unconfirmed: '带有激活链接的信息已经发送到你的邮箱。请打开此链接来激活你的帐号'
-      signed_up_but_inactive: '虽然您已经注册成功，但因为你的帐号还未激活，所以你暂时无法登录'
-      signed_up_but_locked: '虽然您已经注册成功，但因为你的帐号已被锁定，所以你暂时无法登录'
-    unlocks:
-      send_instructions: '稍后你将收到帐号激活的电子邮件'
-      unlocked: '您的帐号已成功解锁，您现在已登录.'
-      send_paranoid_instructions: '如果您的邮箱存在于我们的数据库中，您将收到一封解锁账号的邮件.'
-    omniauth_callbacks:
-      success: '成功地从 %{kind}获得授权.'
-      failure: '因为 %{reason}，所以您无法从 %{kind}获得授权.'
-    mailer:
-      confirmation_instructions:
-        subject: '激活信息'
-      reset_password_instructions:
-        subject: '重置密码信息'
-      unlock_instructions:
-        subject: '解锁信息'
-    views:
-      commons:
-        sidebar:
-          title: '操作面版'
-      links:
-        sign_in: '登录'
-        sign_up: '注册'
-        forget_pass: '忘记密码?'
-        resend_confirmation: "没有收到确认指令？"
-        resend_unlock: "没有收到解锁指令？"
-        omni_auth: "用%{provider}登录"
-      confirmations:
-        new:
-          title: '重新发送确认指令'
-          submit: '重发确认邮件'
-      passwords:
-        edit:
-          title: '修改密码'
-          submit: '修改'
-        new:
-          title: '忘记密码'
-          submit: '发送重置邮件'
-      registrations:
-        edit:
-          title: '更改注册信息'
-          password: '修改密码'
-          submit: '修改'
-          change_pass_tip: "如果你不想改变,留下空白"
-        new:
-          title: '注册'
-          submit: '注册'
-        binding:
-          title: '绑定'
-          submit: '绑定'
-      sessions:
-        new:
-          title: '登录'
-          submit: '登录'
-          remember_me: '记住我'
-      unlocks:
-        new:
-          title: '重发解锁指令'
-          submit: '重发解锁邮件'
-    navigation:
-      sign_in: '登录'
-      sign_up: '注册'
-      sign_out: '退出'
-      change_password: '修改密码'
-      change_registration: '修改登记'
-
-
+      cancel: "取消"
+      basic_info: "基本信息"
+      required: "必需填"
+      optional: "可填"
+      one_char: "角色"
+      char_length_up_to: "最长"
+      char_length_of: "长度范围"
+      save: "保存"
+      save_and_add_another: "保存并添加"
+      save_and_edit: "保存并编辑"
+      all_of_the_following_related_items_will_be_deleted: "? 下面相关的所以条目都会被删除"
+      are_you_sure_you_want_to_delete_the_object: "你确定删除这个 %{model_name}"
+      confirmation: "是的，我确定"
+      bulk_delete: "下面的对象会被删除， 和它们有联系或者相关的也会被删除:"
+      new_model: "%{name} (new)"
+    export:
+      confirmation: "导出 %{name}"
+      select: "选中区域来导出"
+      select_all_fields: "选中所有的区域"
+      fields_from: "来自 %{name} 的区域"
+      fields_from_associated: "来自和 %{name} 有关联的区域"
+      display: "显示 %{name}: %{type}"
+      options_for: "%{name} 的选项"
+      empty_value_for_associated_objects: "<empty>"
+      click_to_reverse_selection: '点击倒序选中的'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Encode to"
+        encoding_to_help: "Choose output encoding. Leave empty to let current input encoding untouched: (%{name})"
+        skip_header: "No header"
+        skip_header_help: "Do not output a header (no fields description)"
+        default_col_sep: ","
+        col_sep: "Column separator"
+        col_sep_help: "Leave blank for default ('%{value}')" # value is default_col_sep
