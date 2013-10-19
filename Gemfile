@@ -37,6 +37,8 @@ gem 'rainbows'
 
 gem 'rails_admin'
 gem 'ckeditor'
+gem "carrierwave"
+gem "mini_magick"
 
 gem "devise"
 gem "devise-i18n"
