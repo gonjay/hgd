@@ -4,6 +4,20 @@
 RailsAdmin.config do |config|
 
 
+  config.model Passage do
+    edit do
+      # For RailsAdmin >= 0.5.0
+      field :title
+      field :content, :ck_editor
+      field :psgType
+      # For RailsAdmin < 0.5.0
+      # field :description do
+      #   ckeditor true
+      # end
+    end
+  end
+
+
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
