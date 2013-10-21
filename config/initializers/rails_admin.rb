@@ -15,6 +15,11 @@ RailsAdmin.config do |config|
       #   ckeditor true
       # end
     end
+
+    list do
+      field :title
+      field :psgType
+    end
   end
 
 
